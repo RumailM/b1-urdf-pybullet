@@ -27,4 +27,10 @@ We can run the test script to verify that we've generated a compatible .urdf fil
 ## Notes
  - Provided .dae files do not have color/material information baked in. We apply a color to each link instead. We can change these colors in b1-urdf-pybullet/desc/xacro/materials.xacro before producing a .urdf file. We can also change the colors after, inside the material inside the .urdf.
 
+
+##To DO
+ - Get rid of auxiliary links, massless, etc. 
+ - Check if collision mesh matches visual
+ - Check https://github.com/unitreerobotics/unitree_pybullet as a reference
+ - https://github.com/Gepetto/example-robot-data/tree/master/robots/a1_description/urdf/a1.urdf
     
