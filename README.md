@@ -1,4 +1,4 @@
-# fr3-urdf-pybullet
+# b1-urdf-pybullet
 This repo contains a modified version of the [b1_description](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/b1_description), producing a .urdf model for the Unitree B1 more suited to basic pybullet simulation environmnets. There is a test script showing that it can successfully be imported. Tested with pybullet==3.2.5 on python-3.11.0.
 
 ## Modifications
@@ -22,5 +22,9 @@ We can run the test script to verify that we've generated a compatible .urdf fil
     python pybullet-test-box-collision.py
     OR
     python pybullet-test-mesh-collision.py
+    
+
+## Notes
+ - Provided .dae files do not have color/material information baked in. We apply a color to each link instead. We can change these colors in b1-urdf-pybullet/desc/xacro/materials.xacro before producing a .urdf file. We can also change the colors after, inside the material inside the .urdf.
 
     
