@@ -11,7 +11,7 @@ pybullet.setAdditionalSearchPath(pybullet_data.getDataPath())
 planeID = pybullet.loadURDF("plane.urdf")
 
 
-robot = pybullet.loadURDF("desc/b1_mesh_collide.urdf")
+robot = pybullet.loadURDF("desc/b1_mesh_collide.urdf",[0,0,0.75])
 
 
 
