@@ -7,8 +7,8 @@ This repo contains a modified version of the [b1_description](https://github.com
 
  - Removed gazebo specific-tag generation by not including the gazebo.xacro file
  - Changes paths to relative paths.
- - There are two .xacro files, b1-mesh-collide.xacro and b2-box-collide.xacro. Both produce a .urdf, but one (mesh) of them uses the geometry of the provided .dae files by Unitree for collisions. The other uses simple geometric structures for collisions (box).
- - Repo includes pre-xacro'd urdfs as well to use immediately. 
+ - There are two .xacro files, b1-mesh-collide.xacro and b1-box-collide.xacro. Both produce a .urdf, but one (mesh) of them uses the geometry of the provided .dae files by Unitree for collisions. The other uses simple geometric structures for collisions (box).
+ - Repo includes pre-xacro'd .urdfs as well to use immediately. 
  - Removed massless base link
  - Removed transmission tags
 
