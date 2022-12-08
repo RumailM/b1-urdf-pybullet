@@ -9,6 +9,8 @@ This repo contains a modified version of the [b1_description](https://github.com
  - Changes paths to relative paths.
  - There are two .xacro files, b1-mesh-collide.xacro and b2-box-collide.xacro. Both produce a .urdf, but one (mesh) of them uses the geometry of the provided .dae files by Unitree for collisions. The other uses simple geometric structures for collisions (box).
  - Repo includes pre-xacro'd urdfs as well to use immediately. 
+ - Removed massless base link
+ - Removed transmission tags
 
 ## Usage
 
@@ -28,7 +30,7 @@ We can run the test script to verify that we've generated a compatible .urdf fil
 
 ## Notes
  - Provided .dae files do not have color/material information baked in. We apply a color to each link instead. We can change these colors in b1-urdf-pybullet/desc/xacro/materials.xacro before producing a .urdf file. We can also change the colors after, inside the material inside the .urdf.
- - Removed massless base link
+ 
  - Otherwise mirrored .urdf of [a1.urdf from example-robot-data](https://github.com/Gepetto/example-robot-data/blob/master/robots/a1_description/urdf/a1.urdf)
 
 
