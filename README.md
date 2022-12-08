@@ -34,7 +34,6 @@ We can run the test script to verify that we've generated a compatible .urdf fil
  - Otherwise mirrored .urdf of [a1.urdf from example-robot-data](https://github.com/Gepetto/example-robot-data/blob/master/robots/a1_description/urdf/a1.urdf)
 
 
-##To DO
- - Check if collision mesh matches visual
- - https://github.com/Gepetto/example-robot-data/tree/master/robots/a1_description/urdf/a1.urdf
+## To DO
+ - Check if collision mesh matches visual for [b1_mesh_collide.urdf](https://github.com/RumailM/b1-urdf-pybullet/blob/main/desc/b1_mesh_collide.urdf)
     
