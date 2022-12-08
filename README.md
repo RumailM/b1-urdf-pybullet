@@ -1,6 +1,8 @@
 # b1-urdf-pybullet
 This repo contains a modified version of the [b1_description](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/b1_description), producing a .urdf model for the Unitree B1 more suited to basic pybullet simulation environmnets. There is a test script showing that it can successfully be imported. Tested with pybullet==3.2.5 on python-3.11.0.
 
+![image](https://user-images.githubusercontent.com/36772370/206566096-f2bf022b-e105-4dd2-94f3-80392221ca12.png)
+
 ## Modifications
 
  - Removed gazebo specific-tag generation by not including the gazebo.xacro file
@@ -26,11 +28,11 @@ We can run the test script to verify that we've generated a compatible .urdf fil
 
 ## Notes
  - Provided .dae files do not have color/material information baked in. We apply a color to each link instead. We can change these colors in b1-urdf-pybullet/desc/xacro/materials.xacro before producing a .urdf file. We can also change the colors after, inside the material inside the .urdf.
+ - Removed massless base link
+ - Otherwise mirrored .urdf of [a1.urdf from example-robot-data](https://github.com/Gepetto/example-robot-data/blob/master/robots/a1_description/urdf/a1.urdf)
 
 
 ##To DO
- - Get rid of auxiliary links, massless, etc. 
  - Check if collision mesh matches visual
- - Check https://github.com/unitreerobotics/unitree_pybullet as a reference
  - https://github.com/Gepetto/example-robot-data/tree/master/robots/a1_description/urdf/a1.urdf
     
